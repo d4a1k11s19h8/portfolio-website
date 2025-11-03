@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Daksh Rathore</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dark-mode.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+        <span class="toggle-icon">🌙</span>
+    </button>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Daksh Rathore</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="about-header">
+        <div class="container">
+            <div class="about-hero">
+                <div class="about-avatar">
+                    <div class="avatar-large"></div>
+                </div>
+                <div class="about-intro">
+                    <h1 class="page-title">About Me</h1>
+                    <p class="intro-text">
+                        Computer Science Engineering student at VNIT Nagpur passionate about 
+                        artificial intelligence, web development, and solving complex problems 
+                        through innovative technology solutions.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">7.90</span>
+                            <span class="stat-label">CGPA</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5763</span>
+                            <span class="stat-label">JEE Rank</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">6+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="education-section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - 2027</div>
+                    <div class="timeline-content">
+                        <h3>B.Tech in Computer Science and Engineering</h3>
+                        <p class="institution">Visvesvaraya National Institute of Technology, Nagpur</p>
+                        <p class="score">CGPA: 7.90</p>
+                        <p class="description">
+                            Relevant coursework: Data Structures & Algorithms, Object-Oriented Programming, 
+                            Database Management Systems, Computer Networks, Artificial Intelligence
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content">
+                        <h3>Grade XII (CBSE)</h3>
+                        <p class="institution">KV Koliwada</p>
+                        <p class="score">Percentage: 93.60%</p>
+                        <p class="description">
+                            Physics, Chemistry, Mathematics, Computer Science
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-content">
+                        <h3>Grade X (CBSE)</h3>
+                        <p class="institution">KV Koliwada</p>
+                        <p class="score">Percentage: 93.00%</p>
+                        <p class="description">
+                            Science, Mathematics, Social Science, English
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-detailed">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            
+            <div id="skillsContainer" class="skills-container">
+                </div>
+        </div>
+    </section>
+
+    <section class="achievements-section">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">🏆</div>
+                    <h3>JEE Main 2024</h3>
+                    <p>Secured All India Rank 5763 among 1.2 million candidates</p>
+                    <span class="achievement-year">2024</span>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">📚</div>
+                    <h3>Academic Excellence</h3>
+                    <p>Consistent academic performance with 93%+ in 10th and 12th standards</p>
+                    <span class="achievement-year">2020-2022</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer-placeholder" class="footer"></footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/about.js"></script>
+</body>
+</html>

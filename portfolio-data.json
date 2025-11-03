@@ -1,0 +1,229 @@
+{
+  "personalInfo": {
+    "name": "Daksh Rathore",
+    "title": "Computer Science Engineering Student",
+    "bio": "VNIT Nagpur '27 | Passionate about AI, Web Development & Problem Solving | JEE Main Rank 5763",
+    "avatar": "assets/avatar.png",
+    "contact": {
+      "email": "rathoredaksh2004@gmail.com",
+      "phone": "+91-8847722869",
+      "location": "Nagpur, India",
+      "github": "d4a1k11s19h8",
+      "linkedin": "rathoredaksh2004",
+      "codeforces": "daksh1515"
+    }
+  },
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "items": [
+        { "name": "Python", "level": 85 },
+        { "name": "C/C++", "level": 80 },
+        { "name": "JavaScript/TypeScript", "level": 75 },
+        { "name": "HTML/CSS", "level": 70 }
+      ]
+    },
+    {
+      "category": "Technologies & Frameworks",
+      "items": [
+        { "name": "React", "level": 70 },
+        { "name": "Google Cloud (NLP, Vision)", "level": 75 },
+        { "name": "AI/ML (General)", "level": 65 },
+        { "name": "MySQL", "level": 65 }
+      ]
+    },
+    {
+      "category": "Concepts & Tools",
+      "items": [
+        { "name": "Data Structures & Algorithms", "level": 85 },
+        { "name": "Object-Oriented Programming", "level": 80 },
+        { "name": "Git & Linux", "level": 75 },
+        { "name": "Web Development", "level": 70 }
+      ]
+    }
+  ],
+  "projects": [
+  {
+    "id": 1,
+    "name": "AI SafeScape – AI-Powered Detection of Online Harassment",
+    "description": "AI platform that ensures safer digital interactions by detecting harmful, misleading, or fraudulent content in real-time.",
+    "detailedDescription": "AI SafeScape identifies profanity, scams, misinformation, and visual manipulation (including ASCII-based evasion). Integrates Google Cloud NLP, Vision, and Gemini Pro Vision APIs for multimodal threat analysis.",
+    "technologies": ["TypeScript", "React", "Google Cloud NLP", "Vision API", "Gemini Pro Vision", "AI/ML"],
+    "githubUrl": "https://github.com/d4a1k11s19h8/ai-safescape",
+    "liveUrl": "",
+    "status": "completed",
+    "year": 2025,
+    "codeSnippets": [
+      {
+        "language": "typescript",
+        "filename": "content-detector.ts",
+        "code": "// AI Content Detection Logic\nclass ContentDetector {\n  private nlpClient: NLPClient;\n  private visionClient: VisionClient;\n\n  async detectHarmfulContent(text: string, image?: Buffer): Promise<DetectionResult> {\n    const textAnalysis = await this.nlpClient.analyzeSentiment(text);\n    const imageAnalysis = image ? await this.visionClient.safeSearchDetection(image) : null;\n\n    return this.analyzeThreatLevel(textAnalysis, imageAnalysis);\n  }\n}"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Smart Car Parking System",
+    "description": "Efficient parking management system leveraging advanced data structures.",
+    "detailedDescription": "Developed using Arrays, Linked Lists, and B+ Trees to manage parking slots. Supports insertion, deletion, and optimized search operations to ensure minimal time complexity for slot allocation.",
+    "technologies": ["C", "Data Structures", "Algorithms"],
+    "githubUrl": "https://github.com/d4a1k11s19h8/smart-car-parking-system",
+    "liveUrl": "",
+    "status": "completed",
+    "year": 2025,
+    "codeSnippets": [
+      {
+        "language": "c",
+        "filename": "bptree.c",
+        "code": "// B+ Tree node structure for parking slots\nstruct BPlusNode {\n    int keys[MAX];\n    struct BPlusNode *child[MAX + 1];\n    int numKeys;\n    bool isLeaf;\n};"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Large Number Calculator",
+    "description": "1024-bit calculator handling signed decimal numbers up to 309 digits.",
+    "detailedDescription": "Implements string-based arithmetic for large numbers, performing addition, subtraction, and multiplication beyond native data type limits with precision and carry/borrow logic.",
+    "technologies": ["C", "Algorithms", "String Manipulation"],
+    "githubUrl": "https://github.com/d4a1k11s19h8/large-num-multiplication",
+    "liveUrl": "",
+    "status": "completed",
+    "year": 2025,
+    "codeSnippets": [
+      {
+        "language": "c",
+        "filename": "calculator.c",
+        "code": "// Large number addition implementation\nchar* addLargeNumbers(const char* num1, const char* num2) {\n    int len1 = strlen(num1);\n    int len2 = strlen(num2);\n    int carry = 0;\n    // ... rest of logic ...\n    return result;\n}"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Operating System Shell",
+    "description": "A mini UNIX-like shell implementation written in C.",
+    "detailedDescription": "Implements core shell functionalities such as command parsing, process creation using fork/exec, input-output redirection, and basic pipelining. Focuses on low-level OS concepts like system calls and process control.",
+    "technologies": ["C", "Operating Systems", "System Calls", "Process Management"],
+    "githubUrl": "https://github.com/d4a1k11s19h8/OS_SHELL",
+    "liveUrl": "",
+    "status": "completed",
+    "year": 2025,
+    "codeSnippets": [
+      {
+        "language": "c",
+        "filename": "shell.c",
+        "code": "// Forking a new process\npid_t pid = fork();\nif (pid == 0) {\n    execvp(args[0], args);\n    perror(\"exec failed\");\n    exit(1);\n} else {\n    wait(NULL);\n}"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Email Analyzer",
+    "description": "Python script for parsing and analyzing email metadata and content.",
+    "detailedDescription": "Automates extraction of sender, recipient, timestamp, and keyword analysis from raw email text using NLP techniques. Useful for security auditing and inbox analytics.",
+    "technologies": ["Python", "NLP", "Regex", "Data Parsing"],
+    "githubUrl": "https://github.com/d4a1k11s19h8/email-analyzer-project",
+    "liveUrl": "",
+    "status": "completed",
+    "year": 2025,
+    "codeSnippets": [
+      {
+        "language": "python",
+        "filename": "analyzer.py",
+        "code": "import re\n\ndef extract_sender(email_text):\n    match = re.search(r'From: (.*)', email_text)\n    return match.group(1) if match else None"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "NyaySaathi – Legal Aid Platform",
+    "description": "A front-end platform aimed at providing legal awareness and assistance.",
+    "detailedDescription": "Built using HTML, CSS, and JavaScript to serve as a digital helpdesk for citizens to access simplified legal information and resources. Focuses on UI clarity and accessibility.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "githubUrl": "https://github.com/d4a1k11s19h8/NyaySaathi",
+    "liveUrl": "",
+    "status": "completed",
+    "year": 2024,
+    "codeSnippets": [
+      {
+        "language": "html",
+        "filename": "index.html",
+        "code": "<section class=\"hero\">\n  <h1>Welcome to NyaySaathi</h1>\n  <p>Your companion for understanding your legal rights.</p>\n</section>"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "C_N_LAB – Computer Networks Simulations",
+    "description": "Python-based networking lab assignments and simulations.",
+    "detailedDescription": "Includes Python implementations for CRC error detection, Hamming code, and basic socket programming examples to demonstrate computer networking concepts practically.",
+    "technologies": ["Python", "Networking", "Simulation"],
+    "githubUrl": "https://github.com/d4a1k11s19h8/C_N_LAB",
+    "liveUrl": "",
+    "status": "completed",
+    "year": 2025,
+    "codeSnippets": [
+      {
+        "language": "python",
+        "filename": "crc.py",
+        "code": "def crc_encode(data, key):\n    appended_data = data + '0'*(len(key)-1)\n    remainder = mod2div(appended_data, key)\n    return data + remainder"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Developer Portfolio Website",
+    "description": "Fully responsive, dynamic portfolio website.",
+    "detailedDescription": "Personal portfolio showcasing projects, skills, and achievements. Built with HTML, CSS, and JavaScript. Uses JSON for dynamic content loading and supports dark/light themes.",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "JSON"],
+    "githubUrl": "https://github.com/d4a1k11s19h8/website",
+    "liveUrl": "",
+    "status": "completed",
+    "year": 2024,
+    "codeSnippets": [
+      {
+        "language": "javascript",
+        "filename": "main.js",
+        "code": "async function loadPortfolioData() {\n  try {\n    const response = await fetch('data/projects.json');\n    const projects = await response.json();\n    renderProjects(projects);\n  } catch (error) {\n    console.error('Error loading projects:', error);\n  }\n}"
+      }
+    ]
+  }
+]
+  ,
+  "education": [
+    {
+      "degree": "B.Tech in Computer Science and Engineering",
+      "institution": "Visvesvaraya National Institute of Technology, Nagpur",
+      "duration": "2023 - 2027",
+      "score": "7.90 CGPA",
+      "description": "Relevant coursework: Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Computer Networks"
+    },
+    {
+      "degree": "Grade XII (CBSE)",
+      "institution": "KV Koliwada", 
+      "duration": "2022",
+      "score": "93.60%",
+      "description": "Physics, Chemistry, Mathematics, Computer Science"
+    },
+    {
+      "degree": "Grade X (CBSE)",
+      "institution": "KV Koliwada",
+      "duration": "2020", 
+      "score": "93.00%",
+      "description": "Science, Mathematics, Social Science, English"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "JEE Main Examination",
+      "year": "2024",
+      "description": "Secured All India Rank 5763 among 1.2 million candidates",
+      "category": "Academic"
+    },
+    {
+      "title": "Academic Excellence",
+      "year": "2020-2022", 
+      "description": "Consistent academic performance with 93%+ in 10th and 12th standards",
+      "category": "Academic"
+    }
+  ]
+}
