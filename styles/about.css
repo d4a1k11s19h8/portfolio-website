@@ -1,0 +1,407 @@
+/* All the styles from your about.js file, now in a dedicated .css file */
+.about-header {
+    padding: 120px 0 80px;
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+}
+
+.about-hero {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--spacing-2xl);
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-avatar {
+    display: flex;
+    justify-content: center;
+}
+
+/* styles/about.css */
+
+.avatar-large {
+  width: 200px;
+  height: 200px;
+  /* Fallback color */
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+
+  /* --- ADD THESE LINES --- */
+  /* Make sure this path matches your file name! */
+  background-image: url('../assets/avatar.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.about-intro {
+    max-width: 600px;
+}
+
+.intro-text {
+    font-size: var(--font-size-lg);
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-lg);
+}
+
+.about-stats {
+    display: flex;
+    gap: var(--spacing-xl);
+    flex-wrap: wrap;
+}
+
+.stat {
+    text-align: center;
+    padding: var(--spacing-md);
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    min-width: 120px;
+    transition: var(--transition);
+}
+
+.stat:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.stat-number {
+    display: block;
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1;
+    margin-bottom: var(--spacing-xs);
+}
+
+.stat-label {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.education-section {
+    background: var(--bg-secondary);
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--primary-color);
+    opacity: 0.3;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: var(--spacing-2xl);
+    padding-left: 80px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 24px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    border: 3px solid var(--bg-secondary);
+    z-index: 2;
+    transition: var(--transition);
+}
+
+.timeline-item:hover::before {
+    transform: scale(1.3);
+    background: var(--secondary-color);
+}
+
+.timeline-item.active .timeline-content {
+    background: var(--bg-primary);
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-lg);
+}
+
+.timeline-date {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--primary-color);
+    color: white;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-lg);
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+    min-width: 80px;
+    text-align: center;
+}
+
+.timeline-content {
+    background: var(--bg-primary);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+}
+
+.timeline-content:hover {
+    transform: translateX(10px);
+    border-color: var(--primary-color);
+}
+
+.timeline-content h3 {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.institution {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: var(--spacing-xs);
+}
+
+.score {
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-bottom: var(--spacing-sm);
+}
+
+.description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.skills-detailed {
+    background: var(--bg-primary);
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-xl);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill-category-detailed {
+    background: var(--bg-secondary);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.skill-category-detailed:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.skill-category-detailed h3 {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+}
+
+.skill-levels {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.skill-level {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.skill-name {
+    font-weight: 500;
+    color: var(--text-primary);
+    font-size: var(--font-size-sm);
+}
+
+.skill-bar {
+    width: 100%;
+    height: 8px;
+    background: var(--bg-tertiary);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 10px;
+    width: 0%;
+    transition: width 1.5s ease-in-out;
+}
+
+.achievements-section {
+    background: var(--bg-secondary);
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.achievement-card {
+    background: var(--bg-primary);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-xl);
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.achievement-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.1), transparent);
+    transition: left 0.5s ease-in-out;
+}
+
+.achievement-card:hover::before {
+    left: 100%;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.achievement-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.achievement-card h3 {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.achievement-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-md);
+}
+
+.achievement-year {
+    background: var(--primary-color);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+}
+
+/* Animation classes from about.js - now standardized with animations.css */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+/* The .animate-in class is no longer needed.
+   main.js will add the .visible class from animations.css
+*/
+
+@media (max-width: 768px) {
+    .about-hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: var(--spacing-xl);
+    }
+    
+    .about-stats {
+        justify-content: center;
+    }
+    
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        padding-left: 60px;
+    }
+    
+    .timeline-item::before {
+        left: 14px;
+    }
+    
+    .timeline-date {
+        min-width: 60px;
+        font-size: var(--font-size-xs);
+    }
+    
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-header {
+        padding: 100px 0 60px;
+    }
+    
+    .avatar-large {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .avatar-large::before {
+        font-size: 2rem;
+    }
+    
+    .about-stats {
+        gap: var(--spacing-sm);
+    }
+    
+    .stat {
+        min-width: 100px;
+        padding: var(--spacing-sm);
+    }
+    
+    .stat-number {
+        font-size: var(--font-size-2xl);
+    }
+}
